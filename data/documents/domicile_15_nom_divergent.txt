@@ -1,0 +1,9 @@
+LYDEC
+FACTURE D'EAU ET D'ELECTRICITE
+
+Numero de contrat : 4471203
+Nom : IDRISSI Hamid
+Adresse : 12 rue Ibn Sina, Maarif, Casablanca
+Date de facture : 31/07/2026
+Montant total : 402,10 MAD
+Emetteur : LYDEC

@@ -1,0 +1,13 @@
+LYDEC
+Lyonnaise des Eaux de Casablanca
+FACTURE D'EAU ET D'ELECTRICITE
+
+Numero de contrat : 4471203
+Nom : BENALI Youssef
+Adresse : 12 rue Ibn Sina, Maarif, Casablanca
+Periode de consommation : du 03/06/2026 au 03/07/2026
+Date de facture : 18/07/2026
+Consommation electricite : 187 kWh
+Consommation eau : 12 m3
+Montant total : 428,50 MAD
+Emetteur : LYDEC

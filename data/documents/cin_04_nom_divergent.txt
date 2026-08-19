@@ -1,0 +1,12 @@
+ROYAUME DU MAROC
+DIRECTION GENERALE DE LA SURETE NATIONALE
+CARTE D'IDENTITE NATIONALE
+
+Nom : CHAKIR
+Prenom : Mehdi
+Date de naissance : 30/06/1992
+Numero CIN : C112233
+Adresse : 3 rue Al Massira, Marrakech
+Date d'emission : 18/08/2024
+Valable jusqu'au : 18/08/2034
+Emetteur : DGSN

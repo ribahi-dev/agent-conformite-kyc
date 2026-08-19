@@ -1,0 +1,9 @@
+LYDEC
+FACTURE D'EAU ET D'ELECTRICITE
+
+Numero de contrat : 4471203
+Nom : BENALI Youssef
+Adresse : 12 rue Ibn Sina, Maarif, Casablanca
+Date de facture : 18/10/2026
+Montant total : 415,00 MAD
+Emetteur : LYDEC

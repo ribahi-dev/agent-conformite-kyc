@@ -1,0 +1,12 @@
+ROYAUME DU MAROC
+DIRECTION GENERALE DE LA SURETE NATIONALE
+CARTE D'IDENTITE NATIONALE
+
+Nom : EL AMRANI
+Prenom : Salma
+Date de naissance : 07/01/1997
+Numero CIN : 1234
+Adresse : 27 rue Oued Ziz, Hay Riad, Rabat
+Date d'emission : 18/08/2023
+Valable jusqu'au : 18/08/2033
+Emetteur : DGSN

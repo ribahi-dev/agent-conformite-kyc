@@ -1,0 +1,275 @@
+{
+  "date_reference": "2026-08-18",
+  "nombre_cas": 20,
+  "avertissement": "Donnees entierement fictives, generees pour un projet pedagogique. Noms, adresses et numeros sont inventes.",
+  "cas": [
+    {
+      "fichier": "cin_01_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "CIN conforme, cas nominal"
+    },
+    {
+      "fichier": "cin_02_expire_bientot.txt",
+      "dossier": {
+        "dossier_id": "D-2026-002",
+        "nom": "ALAOUI",
+        "prenom": "Fatima Zahra",
+        "adresse_declaree": "45 avenue Mohammed V, Agdal, Rabat"
+      },
+      "statut_attendu": "A_VERIFIER",
+      "codes_attendus": [
+        "CIN_EXPIRE_BIENTOT"
+      ],
+      "description": "CIN valide mais expirant dans 20 jours (avertissement)"
+    },
+    {
+      "fichier": "cin_03_expiree.txt",
+      "dossier": {
+        "dossier_id": "D-2026-003",
+        "nom": "TAZI",
+        "prenom": "Karim",
+        "adresse_declaree": "8 boulevard Pasteur, Tanger"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "CIN_EXPIREE"
+      ],
+      "description": "CIN expiree depuis 8 mois"
+    },
+    {
+      "fichier": "cin_04_nom_divergent.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "NOM_DIVERGENT"
+      ],
+      "description": "CIN valide mais au nom d'une autre personne que le dossier"
+    },
+    {
+      "fichier": "cin_05_numero_invalide.txt",
+      "dossier": {
+        "dossier_id": "D-2026-004",
+        "nom": "EL AMRANI",
+        "prenom": "Salma",
+        "adresse_declaree": "27 rue Oued Ziz, Hay Riad, Rabat"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "CIN_NUMERO_FORMAT_INVALIDE"
+      ],
+      "description": "Numero de CIN hors format national (chiffres seuls)"
+    },
+    {
+      "fichier": "cin_06_sans_validite.txt",
+      "dossier": {
+        "dossier_id": "D-2026-003",
+        "nom": "TAZI",
+        "prenom": "Karim",
+        "adresse_declaree": "8 boulevard Pasteur, Tanger"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "CIN_DATE_VALIDITE_ABSENTE"
+      ],
+      "description": "CIN sans date de validite lisible"
+    },
+    {
+      "fichier": "cin_07_emetteur_invalide.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "EMETTEUR_NON_AUTORISE"
+      ],
+      "description": "Piece d'identite emise par un organisme non habilite"
+    },
+    {
+      "fichier": "domicile_08_lydec_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "Facture Lydec de moins de 3 mois, cas nominal"
+    },
+    {
+      "fichier": "domicile_09_redal_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-002",
+        "nom": "ALAOUI",
+        "prenom": "Fatima Zahra",
+        "adresse_declaree": "45 avenue Mohammed V, Agdal, Rabat"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "Facture Redal recente, nom en ordre inverse (prenom puis nom)"
+    },
+    {
+      "fichier": "domicile_10_amendis_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-003",
+        "nom": "TAZI",
+        "prenom": "Karim",
+        "adresse_declaree": "8 boulevard Pasteur, Tanger"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "Facture Amendis a la limite haute de recevabilite (2 mois et demi)"
+    },
+    {
+      "fichier": "domicile_11_onee_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-004",
+        "nom": "EL AMRANI",
+        "prenom": "Salma",
+        "adresse_declaree": "27 rue Oued Ziz, Hay Riad, Rabat"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "Facture ONEE, emetteur ecrit en toutes lettres"
+    },
+    {
+      "fichier": "domicile_12_maroctelecom_conforme.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "VALIDE",
+      "codes_attendus": [],
+      "description": "Facture telecom recente, emetteur sous son sigle IAM"
+    },
+    {
+      "fichier": "domicile_13_perime.txt",
+      "dossier": {
+        "dossier_id": "D-2026-002",
+        "nom": "ALAOUI",
+        "prenom": "Fatima Zahra",
+        "adresse_declaree": "45 avenue Mohammed V, Agdal, Rabat"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "JUSTIFICATIF_PERIME"
+      ],
+      "description": "Facture de 5 mois, au-dela du seuil de 3 mois"
+    },
+    {
+      "fichier": "domicile_14_limite_3mois.txt",
+      "dossier": {
+        "dossier_id": "D-2026-003",
+        "nom": "TAZI",
+        "prenom": "Karim",
+        "adresse_declaree": "8 boulevard Pasteur, Tanger"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "JUSTIFICATIF_PERIME"
+      ],
+      "description": "Cas limite : facture d'exactement 3 mois et 1 jour"
+    },
+    {
+      "fichier": "domicile_15_nom_divergent.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "NOM_DIVERGENT"
+      ],
+      "description": "Facture recente mais au nom d'un tiers (colocataire, proprietaire)"
+    },
+    {
+      "fichier": "domicile_16_emetteur_non_autorise.txt",
+      "dossier": {
+        "dossier_id": "D-2026-004",
+        "nom": "EL AMRANI",
+        "prenom": "Salma",
+        "adresse_declaree": "27 rue Oued Ziz, Hay Riad, Rabat"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "EMETTEUR_NON_AUTORISE"
+      ],
+      "description": "Facture recente d'un organisme hors liste blanche"
+    },
+    {
+      "fichier": "domicile_17_date_future.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "DATE_EMISSION_FUTURE"
+      ],
+      "description": "Date d'emission posterieure au jour d'examen (document suspect)"
+    },
+    {
+      "fichier": "domicile_18_sans_adresse.txt",
+      "dossier": {
+        "dossier_id": "D-2026-002",
+        "nom": "ALAOUI",
+        "prenom": "Fatima Zahra",
+        "adresse_declaree": "45 avenue Mohammed V, Agdal, Rabat"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "ADRESSE_ABSENTE"
+      ],
+      "description": "Attestation recente mais sans adresse exploitable"
+    },
+    {
+      "fichier": "divers_19_type_inconnu.txt",
+      "dossier": {
+        "dossier_id": "D-2026-003",
+        "nom": "TAZI",
+        "prenom": "Karim",
+        "adresse_declaree": "8 boulevard Pasteur, Tanger"
+      },
+      "statut_attendu": "REJETE",
+      "codes_attendus": [
+        "DOC_TYPE_INCONNU"
+      ],
+      "description": "Bulletin de paie : ni CIN ni justificatif de domicile"
+    },
+    {
+      "fichier": "domicile_20_nom_translitteration.txt",
+      "dossier": {
+        "dossier_id": "D-2026-001",
+        "nom": "BENALI",
+        "prenom": "Youssef",
+        "adresse_declaree": "12 rue Ibn Sina, Maarif, Casablanca"
+      },
+      "statut_attendu": "A_VERIFIER",
+      "codes_attendus": [
+        "NOM_APPROXIMATIF"
+      ],
+      "description": "Variante de translitteration du prenom (Youssuf / Youssef)"
+    }
+  ]
+}
